@@ -3,11 +3,13 @@
 ![SaveKit Screenshot](public/screenshot.png)
 
 ## Overview
+
 SaveKit is your intelligent savings companion. The landing page presents the app, its features, and guides users to download or learn more. The project is built with Next.js, React, and Tailwind CSS, and is fully responsive.
 
-**Live Demo:** [https://app.vercel.app](https://app.vercel.app)
+**Live Demo:** [https://savekit.vercel.app](https://savekit.vercel.app)
 
 ## Features
+
 - Modern, responsive landing page
 - App logo and branding
 - Hero section with app screenshots
@@ -19,6 +21,7 @@ SaveKit is your intelligent savings companion. The landing page presents the app
 - Contact and social links
 
 ## Getting Started
+
 1. Clone the repository:
    ```bash
    git clone <your-repo-url>
@@ -37,13 +40,3 @@ SaveKit is your intelligent savings companion. The landing page presents the app
    pnpm dev
    ```
 4. Open [http://localhost:3000](http://localhost:3000) to view the app.
-
-## Demo
-You can view the live site here: [https://app.vercel.app](https://app.vercel.app)
-
-![Screenshot](public/screenshot.png)
-
-## Contact
-Made with ❤️ by Mourad El Mehammedi  
-- Email: [mourad.elmehammedi@gmail.com](mailto:mourad.elmehammedi@gmail.com)  
-- GitHub: [mouradELMEHAMMEDI](https://github.com/mouradELMEHAMMEDI) 
