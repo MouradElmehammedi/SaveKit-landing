@@ -1,40 +1,26 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Download,
-  Target,
-  TrendingUp,
-  Calendar,
-  Star,
-  Menu,
-  X,
-} from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Calendar, Download, Star, Target, TrendingUp } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function SaveKitLanding() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <div className="min-h-screen bg-white">
@@ -63,6 +49,7 @@ export default function SaveKitLanding() {
               <Button
                 variant="outline"
                 className="bg-white text-blue-600 hover:bg-gray-100 justify-start"
+                onClick={() => router.push("/savekit-apk-v1.apk")}
               >
                 <Download className="mr-2" size={20} />
                 Download APK
@@ -131,12 +118,10 @@ export default function SaveKitLanding() {
             <Button
               size="lg"
               className="bg-white text-black hover:bg-gray-100 px-8 py-4 rounded-xl"
-              asChild
+              onClick={() => router.push("/savekit-apk-v1.apk")}
             >
-              <Link href="https://mydomain.com/SaveKit.apk">
-                <Download className="mr-2" size={20} />
-                Download APK
-              </Link>
+              <Download className="mr-2" size={20} />
+              Download APK
             </Button>
           </div>
         </div>
@@ -391,12 +376,10 @@ export default function SaveKitLanding() {
               <Button
                 size="lg"
                 className="bg-black text-white hover:bg-gray-800 px-8 py-4 rounded-xl"
-                asChild
+                onClick={() => router.push("/savekit-apk-v1.apk")}
               >
-                <Link href="https://mydomain.com/SaveKit.apk">
-                  <Download className="mr-2" size={20} />
-                  Download APK
-                </Link>
+                <Download className="mr-2" size={20} />
+                Download APK
               </Button>
             </div>
           </div>
